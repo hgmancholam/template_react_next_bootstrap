@@ -1,0 +1,21 @@
+.me-auto {
+  text-align: justify;
+}
+
+.nav-icon-profile {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.nav-dropdown-menu {
+  right: 0;
+  left: auto;
+  transform-origin: top right;
+  /* Agregar transición para suavizar la aparición */
+  transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+  ///transform: scale(0.8); /* Comienza en una escala más pequeña */
+  transform: translate3d(-80px, 50px, 23px) !important;
+}

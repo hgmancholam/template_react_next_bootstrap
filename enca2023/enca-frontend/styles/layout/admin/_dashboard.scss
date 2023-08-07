@@ -1,0 +1,41 @@
+.growth-kpi {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.growth-kpi:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.kpi-icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.kpi-content h3 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.growth {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+.text-success {
+  color: #28a745;
+}
+
+.text-danger {
+  color: #dc3545;
+}

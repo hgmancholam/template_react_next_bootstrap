@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+$font-family-sans-serif: "Nunito", sans-serif;
+
+$bodyfont: "DM Sans";
+$headingfont: "DM Sans";
+
+/*Theme Colors*/
+$bodycolor: #ffffff;
+$headingtext: #000000;
+$bodytext: #505050;
+$themecolor: #5265bb;
+$themecolor-alt: #26c6da;
+$themecolor-dark: #0490e0ce;
+
+/*bootstrap Color*/
+$danger: #ff4d7e;
+$success: #27e246;
+$warning: #fded04;
+$primary: #044ae0;
+$info: #3678c4;
+$inverse: #3e4555;
+$muted: #8d97ad;
+$dark: #263238;
+$light: #f4f8fa;
+$extra-light: #ebf3f5;
+$secondary: #727b84;
+$facebook: #3b5a9a;
+$twitter: #56adf2;
+
+/*Light colors*/
+$light-danger: #f9e7eb;
+$light-success: #e8fdeb;
+$light-warning: #fff8ec;
+$light-primary: #f1effd;
+$light-info: #cfecfe;
+$light-inverse: #f6f6f6;
+$light-megna: #e0f2f4;
+
+$danger-dark: #d73e3e;
+$success-dark: #1dc8cc;
+$warning-dark: #dcaf17;
+$primary-dark: #345bcb;
+$info-dark: #2c73cb;
+$red-dark: #d61f1f;
+$inverse-dark: #232a37;
+$dark-transparent: rgba(0, 0, 0, 0.05);
+
+/*Normal Color*/
+$white: #ffffff;
+$red: #fb3a3a;
+$yellow: #ffd904;
+$purple: #7460ee;
+$blue: #0279c9;
+$megna: #84dadd;
+$orange: #ff993a;
+/*Extra Variable*/
+$rgt: right;
+$lft: left;
+$border: rgba(68, 74, 80, 0.13);
+$radius: 8px;
+$card-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+$img-shadow: 0px 0px 30px rgba(115, 128, 157, 0.3);
+/*Gradiant*/
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+  "light-primary": #d6e4f3,
+  "light-success": #d5f3f2,
+  "light-info": #d3edfa,
+  "light-warning": #f8ecdc,
+  "light-danger": #f8dddd,
+);
+
+@mixin linear-gradient($direction, $color-stops...) {
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(
+    legacy-direction($direction),
+    $color-stops
+  );
+  background: linear-gradient($direction, $color-stops);
+}
+
+$banner-image: url("../../assets/images/landingpage/banner-bg.jpg");
+$c2a-image: url(../../assets/images/landingpage/comingsoon.jpg);
+$banner-slider: url("../../assets/images/staticslider/slider/hero-banner.jpg");
+$form-banner: "url(../../assets/images/form-banners/banner1/banner-bg.jpg)";
+$t1: url(../../assets/images/team/t1.jpg);
+$t2: url(../../assets/images/team/t2.jpg);
+$t3: url(../../assets/images/team/t3.jpg);
+$t4: url(../../assets/images/team/t4.jpg);
+
+// scss-docs-start gray-color-variables
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #eef5f9 !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #757e85 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #1e2a35 !default;
+$black: #000 !default;
+
+ 
+/*******************/
+// Theme Text Contrast
+/********************/
+$min-contrast-ratio: 2;
+
+/*******************/
+// Theme body bg & text color
+/********************/
+$body-bg: $gray-200 !default;
+$body-color: $gray-900 !default;
+
+/*******************/
+// Theme common variable
+/********************/
+$border-radius: 0.3rem !default;
+$box-shadow: 0 0.5rem 1rem rgba($black, 0.05);
+$headings-font-weight: 600 !default;
+
+$card-border-width: 0 !default;
+$card-box-shadow: $box-shadow !default;
+$grid-gutter-width: 1.85rem !default;
+
+$input-bg: $white !default;
+/*******************/
+// Theme btn
+/********************/
+$btn-focus-width: 0px;
+
+/*******************/
+// Theme sidebar width
+/********************/
+$sidebarWidth: 260px;
+$sidebarColor: $white;
